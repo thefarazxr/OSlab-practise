@@ -41,13 +41,13 @@ void comptime()
 }
 void wait()
 {
-    int s = 0;
+    // int s = 0;           Prev Approach from Clg. Record
     wt[0] = 0;
     for (int i = 1; i < n; i++)
     {
         wt[i] = tat[i] - bt[i]; // Formula we know!
-        // s = s + bt[i - 1];       Prev Approach
-        // wt[i] = s - at[i];       prev approach
+        // s = s + bt[i - 1];       Prev Approach from Clg. Record
+        // wt[i] = s - at[i];       Prev Approach from Clg. Record
         twt += wt[i];
     }
 }
